@@ -90,7 +90,8 @@
 - Infrastrucuture: Cloud-native env (AWS, Azure, GCP), containers, Kubernetes, and serverless 
 - Automation: infrastructure as code (Terraform, CloudFormation)
 - Architecure: microservices
-- API endpoints and external integrations: SAML, OAuth, OIDC, SSO
+- Enterprise SSO: Okta, Ping Identity, OneLogin
+- API endpoints and external integrations: SAML, OAuth, OIDC
 - Middleware and communication channels: message brokers (Kafka, RabbitMQ), service meshes (lstio), REST/gRPC APIs
 - Logs monitoring: Prometheus, Grafana, ELK Stack, Datadog, or OpenTelemetry
 - CI/CD pipeline: GitHub Actions, GitLab CI, Jenkins, or CircleCI
