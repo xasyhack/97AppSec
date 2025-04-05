@@ -108,18 +108,25 @@
 - Continuously train developers
 
 # Secure SDLC
-- Mindset  
-- Risk calculation  
-- DevSecOps  
-- Serverless app  
-- Offensive security to defend  
-- Cloud Era  
-- Code Provenance  
+- Mindset: playbook, do you see what happened, scope (purpose of product), secure coding practices, data exposure and minimization, least priviledge and infra security, security tools and deployment, patch management, app monitoring and alerting, user training and awareness, endpoint security, incident response
+- Automating Risk calculation: continuous application risk evaluation (CARE). Nature of app (data classification/compliance and regulation requirement), how is it built/maintained (tech stack), who is building and maintaining (experience of dev team)
+- DevSecOps: Collaboration and Shared Responsibility, CI/CD, Threat Modeling and Risk Assessment, Automated Security Testing (SAST, DAST, SCA), Secure Configuuration and Secrets Management, Monitoring, Logging, and Incident Response
+- Great SSDLC program: think (vision, strategic, customer feedback, driver, platform engineering), act (automation at all stages, threat detection, vulnerability management, CBA), persevere against challenge (lack of time, standarization, tech skills)
+- CI/CI pipeline: run less than 10 mins, run for every commit, auto raised with engineer and into ticketing system, allow exceptions specific to env
+- Serverless app: event driven, composed of multiple functions that are executed independently and asynchronously, multitenant cloud service susceptible to security risks (external, internal)
+  - authentication and authorization
+  - encryption (in transit and at rest): certs, encryption algorithms, secure key management
+  - access controls
+  - monitoring and loggin gmechanisms
+  - testing and validation 
+- Offensive security to defend: diff focus of developers and hackers (vulnerabilities, data exfiltration, how to manipulate user), response messages, API endpoints, admin features
+- Cloud Era：secure config, continuous logging and monitoring, data protection in multitenant env (data isolation, encryption, access control and authentication, vulnerability managment, security monitoring, logggin, contractual agreement, regular security assessment), adopt clod access security brokers (data encryption, access control, threat prevention)
+- Code Provenance/ownership: code signing, require verified commits, maintain audit logs and commit history, SBOMS to track components and dependencies (Syft, cycloneDx, Anchore, Trivy), tag builds and artifacts with Metadata, use immutable infra & images, source dependencies from approved respositories, doc provenance polices, developer identity & access control (SSO/MFA, RBAC)
 
 # Data Security & Privacy
-- Passwordless  
-- Securing DB  
-- DataSecOps  
+- Passwordless: defeat attack of brute force, phishing, password spray, dictionary attack. E.g mobile devices (fingerprint, face recognition, etc.), Touch ID for MacOS, and Windows Hello on Microsoft
+- Securing DB: restrict root account, audit account permission, remove accounts that are no longer needed, password rotation
+- DataSecOps: SOC, DevSecOps, Data privacy, Chaso engineering, data governance (polices, procedures, role), data quality (incident counts, response and resolution times, query performance), data classification 
 - Governance  
 - Protect sensitive data  
 - Data-Flow Analysis  
