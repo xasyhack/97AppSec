@@ -148,8 +148,15 @@
 - CI/CD: risks include code injection, Secret/credential hygiene, Misconfiguration. Hyginene steps include access control to acccess pipeline, KMS or Key vault to protect credential, secure build env, code review, security best practices (password management, least privilege access, and regular software updates)
 
 # Vulnerability Management
-- Bug bounty program  
-- Modern vulnerability management approach 
+- Bug bounty program: Use an existing platform, Implement guardrails, Define payouts, Test in production
+- Modern vulnerability management approach (Exploit Prediction Scoring System (EPSS)) https://www.first.org/epss/
+  - Gathers data from vulnerability databases, threat intelligence, and exploit occurrences
+  - Analyzes data using ML to identify exploitation patterns
+  - Continuously refreshes data for current threat landscape
+  - exploitability, exploit code availability, and software popularity.
+  - Assigns probability scores
+  - scores based on specific network environments and exposure levels.
+  - Displays exploitation activity as evidence that exploitation of a vulnerability was attempted
 - Top 25 parameters of vulnerability  
 - Account takeover  
 - Smallest risk  
