@@ -127,20 +127,25 @@
 - Passwordless: defeat attack of brute force, phishing, password spray, dictionary attack. E.g mobile devices (fingerprint, face recognition, etc.), Touch ID for MacOS, and Windows Hello on Microsoft
 - Securing DB: restrict root account, audit account permission, remove accounts that are no longer needed, password rotation
 - DataSecOps: SOC, DevSecOps, Data privacy, Chaso engineering, data governance (polices, procedures, role), data quality (incident counts, response and resolution times, query performance), data classification 
-- Governance  
-- Protect sensitive data  
+- Governance: lvels of access based on user needs
+- Protect sensitive data：key management (generation, exchange, storage, use, crypto-shredding, replacemen tof encryption keys), KSM, HSM, TPM
 - Data-Flow Analysis  
-- Privacy Paradigm  
-- Quantum-Safe Encryption  
+- Privacy Paradigm: data ownership, Privacy-enhancing technologies (PETs), consent, Data Minimization and Purpose Limitation, decentralized data storage, privacy by design
+- Quantum-Safe Encryption: quantum computers potentially breaks asymmetric encryption RSA & ECC (SSL/TLS, digital signatures, secure key exchange to ensure integrity and confidentiality of data). Look for quantum random number generators (QRNGs) generate truly random numbers that are unpredictable and nonreproducible,
 
 # Code Scanning & Testing
-- SCA  
-- App security testing  
-- WAF and RASP  
-- Zero Trust Software Architecture  
-- WAF  
-- Static Analysis  
-- CI/CD  
+- SCA: analyzing dependency manifest files to identify vulnerabilities associated with the included package.
+  - Call graph–based based SCA pinpointing the potential exploited code
+  - Runtime SCA analyzes software dependencies in real time
+- App security testing
+  - SAST: early detection (development phase), scan large codebased, high FP, apply on CI/CD pipelines
+  - DAST: Realistic testing, runtime context, low FP, late detection, Incomprehensive coverage, apply on testing env
+  - SCA: identification of known vulnerabilities in third-party libraries, open-source components, high coverage of commonly used libraries, often relies on CVEs, quick feedback, and easy integration into CI/CD pipelines, apply on development phase and continuous monitoring for updates
+  - IAST: hybrid of SAST & DASDT, more accurate identification of vulnerabilities, deeper insight, Performance overhead, Deployment complexity, apply on staging env
+- WAF: analyzing incoming traffic and filtering out malicious requests and attacks. Advantages of Layered defense, Ease of deployment, Signature-based protection, performance. Downsite of tuning, alert fatigue, limited context
+- RASP: monitors the application’s behavior for suspicious activities. Advantages of Deeper contextual insights and accurate results, real-time protection and zero-day protection, Little to no tuning required. Downsite of performance, Integration challenges, need framework knowledge
+- Zero Trust Software Architecture: identitity access, never trust data, Proactively test for security misconfigurations, STRIDE reduce attack surfaces
+- CI/CD: risks include code injection, Secret/credential hygiene, Misconfiguration. Hyginene steps include access control to acccess pipeline, KMS or Key vault to protect credential, secure build env, code review, security best practices (password management, least privilege access, and regular software updates)
 
 # Vulnerability Management
 - Bug bounty program  
