@@ -157,21 +157,28 @@
   - Assigns probability scores
   - scores based on specific network environments and exposure levels.
   - Displays exploitation activity as evidence that exploitation of a vulnerability was attempted
-- Top 25 parameters of vulnerability  
-- Account takeover  
-- Smallest risk  
-- Remediation  
+- Top 25 parameters of vulnerability
+  - XSS: inject malicious scripts in parameters ~ q, s, search, id, lang, keyword, query, apge, year, email, name, p
+  - SSRF: manipulation of server-side requests to gain unauthorized acces to internal resources ~ dest, redirect, uri, path, data, reference, site, html, val
+  - local file inclusion (LFI): unauthorized access to critical files ~ cat, dir, action, date, file, path, folder, include, page, inc
+  - SQL: extract sensitive data ~ id, page, dir, search, category, file, url, lang, ref, title
+  - Remote code execution (RCE): execute arbitrary code and compromise system security ~ cmd, exec, ping, query, code, process
+  - open redirect: direct users to harmful website ~ next, url, target, dest, redirect_url
 
 # Software Supply Chain
-- Open source dependencies
-- vendor management
-- Open Source AI/ML
-- SBOM
-- Secure  software supply chain
-- Unlock secrets to open source 
+- selecting Open Source dependencies: review public vulnerability history, evaluate the community, analyze the frequency of releases, check the engineering practices, check for licensing, auditing and hardening, staying current with vulnerability management (monitor mailing list and securiyt advisories, inventory in SBOM, security assessment, remediation plan)
+- Open source software (OSS): security policy for OSS, assess the security of OSS, regular security audit, patch management, secure coding practices, monitoring and analyze potential security threats, participate in OSS communication forum
+- vendor management: CISO to CISO meeting, annual review to discuss service level/quality/cybersecurity, monitor the supplier for any changes in business health and cyberseuciry posture
+- Open Source AI/ML: CI/CD for AL and ML, SBOM, auditing and verification, community collaboration
+- SBOM: building transparency
+- Secure software supply chain: build provenance.
 
 # Threat Modeling
 - Threat model
+  - What are we working on
+  - What can go wrong
+  - What are we going to do about it?
+  - Did we do a good enough job
 - OWASP Insecure Design
 - Attack models
 
