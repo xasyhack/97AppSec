@@ -174,13 +174,46 @@
 - Secure software supply chain: build provenance.
 
 # Threat Modeling
+
+| Phase       | Developer                                                             |
+|-------------|-----------------------------------------------------------------------|
+| Design      | Use a mature authentication system                                   |
+| Design      | Use a mature authorization system                                    |
+| Design      | Use a mature session management system                               |
+| Design      | Use good secrets management                                          |
+| Development | Add application throttling for all inputs                            |
+| Development | Use mature input sanitization libraries for all inputs              |
+| Development | Use mature crypto libraries                                          |
+| Development | Use automated documentation practices                                |
+| Testing     | Use the latest version of dependencies                               |
+| Maintenance | Continuous training on secure coding practices                       |
+
+| Phase       | Infra team                                                            |
+|-------------|-----------------------------------------------------------------------|
+| Design      | Maintain optimal blast radius                                         |
+| Deployment  | Enforce TLS 1.2+ on all data flows                                    |
+| Maintenance | Maintain security agent installs                                      |
+| Maintenance | Maintain mature accounting operations                                |
+| Maintenance | Encrypt data at rest                                                  |
+| Maintenance | Use least privilege design                                            |
+| Maintenance | Tune boundary devices                                                 |
+| Maintenance | Harden all computation systems                                        |
+| Maintenance | Maintain mature authentication systems                                |
+| Maintenance | Maintain attack surface reduction operations                          |
+| Maintenance | Maintain proper secrets hygiene                                       |
+
+
 - Threat model
   - What are we working on
   - What can go wrong
   - What are we going to do about it?
   - Did we do a good enough job
-- OWASP Insecure Design
-- Attack models
+- OWASP Insecure Design： top 5 risky changes ~ new endpoints, changes in data flow, altered trust boundaries, misconfig, deprecated libraries. Toxic combination: secrets to access AWS in a public repository, internet facing API that exposed PII data/missing input validation, CI/CD misconfiguration
+- Attack models in SSDLC
+  - Define product security requirements
+  - Threat model the product and identify security controls.
+  - Configure scanners to identify vulnerabilities in code
+  - Pen testing
 
 # Threat Intelligence & Incident Response
 - DoS
