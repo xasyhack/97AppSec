@@ -280,15 +280,15 @@
 
 # AI Security & Automation
 - LLMs
-- Secure development with generative AI
-- Managing the risks of ChatGPT
-- Automation for AppSec
-- Understand the risks of using AI in application development
+- Secure development with generative AI: user stories, tech spec, development considerations, testing fairl-safe/fairl-secure/fail-private, Creating data sets for testing, Training considerations
+- Managing the risks of ChatGPT: access to data, vulnerabilities, generate attacks, generate biased or offensive content, IP legal landscape
+- Automation for AppSec: identity repetitive tasks, research automation tools, Plan and design, Implement automation, Test and monitor, Iterate and improve
+- Understand the risks of using AI in application development: malicious code insertion, Legal liabilities, Supply chain vulnerabilities
 
 # IoT & Embedded System Security
-- Secure code
-- Platform security
-- Application Identity
-- Top 5 hacking methods for IoT devices
-- Securing IoT app
+- Secure code for embedded system: coding on unmanaged language, untrusted data input, memory corruption, third party code
+- Platform security: data security, firmware update, Attack Surface Reduction, Secure Communications
+- Application Identity: avoid storing secrets in a hardcoded or globally default fashion
+- Top 5 hacking methods for IoT devices: trojan horse, man-in-the-middle, Zero-Day Exploit， Brute Force Attack, DoS
+- Securing IoT app: Secure communication, Authentication and authorization, Access control, Regular updates, Data protection, Physical security, Monitoring and Logging
 
