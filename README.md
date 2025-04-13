@@ -217,17 +217,66 @@
 
 # Threat Intelligence & Incident Response
 - DoS
-- Botnets
-- Credential stuffing
-- Threat intelligence
+- Botnets: third party threat intelligence tools, automated web searches, regex patterns, open source vulnerability scanners scraping, vulnerability databas, API calls. Shifted focus to non-CVE exploits of misconfigur
+- Credential stuffing: stealing compromised credentials gained from an exposed database
+- SANS IR life cycle
+  - Preparation: how and when to classify an incident before it has occurred
+  - Identification: detecting deviations from normal operations
+  - Containment: disabling network access to systems
+  - Eradication: rmoval of any malicious software from systems so no further damage is done.
+  - Recovery: patch
+  - Lessons learned
+- Threat intelligence: Tactics, Techniques, and Procedures (TTPs). Sources: OSINT, cyber threat intelligence feeds, idustry-specific threat-sharing groups, dark web. A robust threat intelligence program should include a detailed analysis of the TTPs used by threat actors and provide actionable insights on how to counter them. 
 
 # Mobile Security
 - Best practices
-- Containerization
+  - fundamentals: code review, examining & documenting ALL API endpoints, revising info in logs, remove all test code, check config
+  - Privacy act: data breach response plan, third-party service privacy compliance, Secure data transfers, Enable user rights, robust encryption, secure authentication and authorization, Collect only the data necessary
+- Containerization: Separation between applications is done using virtualization or application sandboxing technique. Eg enterprise mobility management (EMM) or mobile device management (MDM)
 
 # API Security
 - JWE Encryption
-- API security
+  - JWTs are Base64 URL-encoded objects that can optionally be signed via JSON Web Signatures (JWS).
+  - encoded header:
+    ```
+    eyJhbGciOi.[header]JSU0EtT0FFUC0yNTYiLCJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwia
+    WF0IjoxNTg1NzAyMjg1LCJ0eXAiOiJKV1QifQ.[CEK]HY8160chJ4VeWWQzPZzehFApkhUzhoL
+    Hg9pUvnnWRiW33bvsYUBNV3dKCLrV_KRosXnbnYgLgOp5nRV3Wj9GG2ZcEniJzRzZpDlgvN
+    0lmNwVRS1kiNw3s7-5eK0kmZz2hsVzGnvPS5Ng9-tzABVyerDi7USmp59lsfqtFCQHRk6ha
+    AW7PZ-YpynRWXl4mDseLKgwsGJBxiW-eymoIMJeOUENWbtiJXfEz5vVB1fhCPQo7INPiQTC
+    N9DPhzV2i4fES7cJZkDBO5SiSBZGgt_xTaIej0ZRdRkZjkqYUJtCJvCEeEGISSo9aM7UBEq
+    3wk_WIAGKU3xCuashZOhHQrw7gL9AeY4AXZQzph4Ny134fdZakJjWwJmyZD3EkfzVlM0_lW
+    jGUsje1POkZKoyej2OMF3bGK2_OPaMySZrvwYMRdEtZiQPGHFRJS42EYctcImuLHXt9KGa4
+    wBtsur5V-_ioaePaSAKv3es6xQTmdYRMDCVPZjckD7Gsy2ZQHAI9epN8zQttlhh2JATuLe1
+    o2FxtIc5xF_hYQ9ujxRQ0g-bHjeUwCN-huPuimazWZ5LycKYrd-rNqcoDDz8SzGv2no8KoO
+    UUIH7b7V4NjvMQ1oUM5Hahfi0Btuqg372s1qkUHRTGNuJRcmflxmBwRGRx1ds48kCbeTGjn
+    4YCh9FjmogSH4.[IV]BPVBQEv7z5hAhHf6.[cipher text]LV9A0irLOenlA_bSYWr2x5Ro8O7SS-lyyZqm
+    mmRomoLSWziBloWWYV8gGPGIFcqpiQJjf1evnfD41ZKkM1VQMwQTsLEJDU91ljkrfnuH504
+    arHQIKcgYrwp1bfEM-TJYdsSHmd5YdLNwkmczsEu8ZJ3DsLKxPGUzLcucxMVMDBtr5wF_5F
+    dAk0yEyAIP8mEnVa2XecReC-FJer0X-B8IPq9Hv3Zf7cmFBNqrc74vDu_0oC876HEnhLb7-
+    e1C6d4tRitWu8fq.[Authenticaiton tag]cE1dqElIb8SEejRcbll9Xw
+    ```
+  - decoding:
+    ```
+    {
+      "alg":"RSA-OAEP-256",
+      "cty":"JWT",
+      "enc":"A256GCM",
+      "iat":1585702285,
+      "typ":"JWT"
+    }
+    ```
+- Defense
+  - Authentication and authorization. Knowing who and what allowed
+  - Zero trust approach
+  - Rate limitting
+  - Input validation
+  - API discovery
+  - Error handling
+  - Expose only limited data
+  - Monitoring and logging
+  - Security audits and pen testing
+  - WAF integration
 
 # AI Security & Automation
 - LLMs
