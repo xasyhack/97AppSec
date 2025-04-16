@@ -1,6 +1,54 @@
 <img src="https://img3.od-cdn.com/ImageType-100/2858-1/%7B4D87366A-B490-40C1-9DCE-7FDBC9244F1F%7DIMG100.JPG" width="200"/>
 
-[Secure Vibe Coding Guide]([https://cloudsecurityalliance.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdk5MIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7b3f54858a71571f11d20064f10de24f74cd7d86/DevSecOps-SDLC.png](https://cloudsecurityalliance.org/blog/2025/04/09/secure-vibe-coding-guide))
+[Secure Vibe Coding Guide](https://cloudsecurityalliance.org/blog/2025/04/09/secure-vibe-coding-guide)
+
+# 🔐 Vibe Coding Security Fundamentals
+Welcome to **Vibe Coding Security Fundamentals** — a quick guide to secure coding when working with AI-generated code or building secure applications.
+
+## 1. 🚫 Avoid Hardcoding Secrets
+- Never store API keys, passwords, or secrets in your code.
+- ✅ Use **environment variables** or a **secrets manager**.
+- 💡 *AI Prompt Tip:* `"Use env variables for sensitive data like API keys."`
+
+## 2. 🔐 Secure Your API Endpoints
+- Implement authentication (e.g., **OAuth**) and **authorization**.
+- ✅ Ensure only authorized users can access sensitive endpoints.
+- 💡 *AI Prompt Tip:* `"Add secure access control to endpoints."`
+
+## 3. 🛡️ Validate and Sanitize Inputs
+- Prevent common injection attacks:
+  - SQL Injection
+  - XSS
+  - Command Injection
+- ✅ Use input validation libraries and escape all user input.
+- 💡 *AI Prompt Tip:* `"Include input validation and sanitization."`
+
+## 4. 🌐 Configure CORS Properly
+- Avoid using wildcards (`*`) in production.
+- ✅ Restrict access to **trusted domains only**.
+- 💡 *AI Prompt Tip:* `"Set strict CORS policies."`
+
+## 5. 🔒 Always Use HTTPS
+- Encrypt all data in transit with **HTTPS**.
+- ✅ Ensure valid **SSL/TLS** certificates are used.
+- 💡 *AI Prompt Tip:* `"Force HTTPS in server configuration."`
+
+## 6. 🧠 Regular Code Reviews
+- Use both **AI tools** (e.g., Grok) and **human reviewers**.
+- ✅ Review for security issues before merging.
+- 💡 *AI Prompt Tip:* `"Scan for security flaws or injections."`
+
+## 7. 📚 Learn Security Basics
+- Know key principles:
+  - Principle of Least Privilege
+  - Separation of Concerns
+  - Defense in Depth
+- ✅ Reference: [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
+
+## 8. 👥 Get Peer Feedback
+- Use platforms like GitHub for **code reviews**.
+- ✅ Encourage team discussions on security.
+- 💡 *Tip:* Share secure coding tips and lessons during reviews.
 
 # Best Practices in Application Security
 
