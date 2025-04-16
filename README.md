@@ -1,3 +1,5 @@
+<img src="https://img3.od-cdn.com/ImageType-100/2858-1/%7B4D87366A-B490-40C1-9DCE-7FDBC9244F1F%7DIMG100.JPG" width="200"/>
+
 # Best Practices in Application Security
 
 ## Code Scanning and Reviews
