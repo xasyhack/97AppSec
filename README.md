@@ -1,5 +1,7 @@
 <img src="https://img3.od-cdn.com/ImageType-100/2858-1/%7B4D87366A-B490-40C1-9DCE-7FDBC9244F1F%7DIMG100.JPG" width="200"/>
 
+[Secure Vibe Coding Guide]([https://cloudsecurityalliance.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdk5MIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7b3f54858a71571f11d20064f10de24f74cd7d86/DevSecOps-SDLC.png](https://cloudsecurityalliance.org/blog/2025/04/09/secure-vibe-coding-guide))
+
 # Best Practices in Application Security
 
 ## Code Scanning and Reviews
